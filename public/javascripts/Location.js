@@ -1,0 +1,1 @@
+var locations = [{"title":"4","lat":"-34.918883699999995","lng":"138.60507239999998","description":"4","name":"4","time":"Sat Aug 26 2017 16:42:26 GMT+0930 (Cen. Australia Standard Time)"},{"title":"s","lat":"-34.9216401","lng":"138.6058635","description":"s","name":"s","time":"Wed Aug 15 2018 13:07:43 GMT+0930 (Australian Central Standard Time)"}]

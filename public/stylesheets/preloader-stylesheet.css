@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+--------------------------------
+	PreLoader - CSS Styles
+--------------------------------
+*/
+
+#load, #loadingContent{
+    width: 100%;
+    height: 100%;
+	display: flex;
+    position: fixed;
+    z-index: 100;
+}
+
+#loading {
+	text-align: center;
+	font-family: Rajdhani;
+	position: absolute;
+	font-size: 25px;
+	top: 42.4%;
+	left: 48.4%;
+}
+
+#loadingText:after {
+	content: 'LOADING';
+	animation: dots 6s infinite linear;
+} 
+
+#loading1:after {
+	content: ' ▪';
+	animation: dots 2s infinite;
+} 
+
+#loading2:after {
+	content: ' ◈';
+	animation: dots 3.5s infinite;
+}
+
+#loading3:after {
+	content: ' ▪';
+	animation: dots 2s infinite;
+}
+
+#loading4:after {
+	content: ' ◈';
+	animation: dots 3.5s infinite;
+}
+
+#loading5:after {
+	content: ' ▪';
+	animation: dots 2s infinite;
+}
+
+#outerCircle {
+	position: absolute;
+	top: 38.64%;
+	left: 45.95%;
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;	
+    background-color: rgba(0,0,0,0);
+    border: 10px solid rgba(3,100,116,0.9);
+    opacity: .9;
+    border-right: 10px solid rgba(0,0,0,0);
+    border-left: 10px solid rgba(0,0,0,0);
+    border-radius: 200px;
+    box-shadow: 0 0 35px #FFFFFF;
+    animation: spinPulse 9s infinite linear;
+}
+
+#innerCircle {
+	position: absolute;
+	top: 39%;
+	left: 46.1%;
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;	
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(53,54,53,0.9);
+    opacity: .9;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    border-radius: 200px;
+    box-shadow: 0 0 15px #048FA6;
+    -webkit-animation: spinoffPulse 20s infinite linear;
+}
+
+/*
+--------------------------------
+	PreLoader - Animations (WEBKIT)
+--------------------------------
+*/
+
+@keyframes dots {
+	0% {
+		color: rgba(0,0,0,0);
+	}
+	
+	50% {
+		opacity: 1;
+		color: #048FA6;
+	}
+	
+	100% {
+		color: #000000; 
+		opacity: 0;
+	}
+}
+
+@keyframes spinPulse {
+    0% {
+        -webkit-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0px 0 1px 1px #2187e7;
+    }
+
+    50% {
+        -webkit-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@keyframes spinoffPulse {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}

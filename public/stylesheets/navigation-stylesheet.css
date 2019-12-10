@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* Navigation CSS Document */
+
+/*
+-------------------
+	Font style
+-------------------	
+*/
+
+.navigationFont {
+	font-family: Rajdhani;
+   	font-weight: normal;	
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+a#navigationLogo:link, a#navigationLogo:visited, a#navigationLogo:hover, a#navigationLogo:active {
+	color: #048FA6;
+	text-decoration: none;
+}
+
+/*
+----------------------------------
+	Navigation CSS Starts Here
+----------------------------------	
+*/
+
+.navigation {
+    position: fixed;	
+    height: 100%;
+    width: 0%;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    z-index: 100;		
+}
+
+.navigation a.navigationLink {
+    display: block;	
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+}
+
+.leftNavigation {
+	position: absolute;
+	height: 100%;
+	top: 0;	
+	left: 0;
+	width: 75%;	
+	background: #242422;
+	color: #FFFFFF;
+	opacity: 0.93;
+	overflow: auto;	
+	overflow-x: hidden;	
+	text-align: center;
+	font-family: Rajdhani;
+   	font-weight: normal;	
+	font-size: 90px;
+}
+
+.rightNavigation {
+	position: absolute;
+	height: 100%;	
+	right: 0;
+	width: 25%;	
+	background: #242422;
+	font-family: Rajdhani;
+	overflow: auto;	
+	overflow-x: hidden;	
+}
+
+.navigation .closeNavigationBar {		
+    position: absolute;
+    top: 5px;
+	left: 13px;
+	overflow-x: hidden;	
+    font-size: 36px;
+	width: 100%;
+	text-align: centre;
+	color: #ffffff;	
+}
+
+.closeNavigationBar:hover, .openNavigationBar:hover {
+	color: #048FA6;	
+}
+
+/*
+----------------------------------
+	Navigation CSS Starts Here
+----------------------------------	
+*/
+
+.navigationHead {
+	position: fixed;
+	width: 100%;
+	padding: 0px;
+	top: 0;	
+    z-index: 10;	
+}
+
+.nameNavigation {	
+	position: fixed;
+	left: 11%;
+	top: 0%;
+	font-family: Chivo;
+	letter-spacing: 10px;
+	font-size: 13px;	
+	z-index: 10000;
+}
+
+.menuIconNavigation {	
+	position: fixed;	
+	top: -4px;
+	font-size: 13px;
+	right: 11.5%;
+}
+
+/*
+---------------------------------------------------------
+	Navigation Redirection-Links/Text CSS Starts Here
+---------------------------------------------------------	
+*/
+
+ul.navigationLinks, .leftNavigationText {
+	list-style-type: none;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+ul.navigationLinks {
+	top: 40%;
+}
+
+.leftNavigationText {
+	top: 33%; 
+}
+
+
+li.navigationLink a.navigationLink {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #585B5B;
+	text-transform: uppercase;	
+}
+
+li.navigationLink a.navigationLink:hover {
+    color: #048FA6;
+	text-decoration: underline;
+    background-color: #EDEDED;	
+}
+
+li.navigationLink a.navigationLink#current {
+    color: #ffffff;	
+	background-color:#048FA6;
+	text-decoration: underline;	
+	transition: 0.5s;
+}
+
+li.navigationLink a.navigationLink:hover:not(#active){
+    color: #008CBA;	
+	background-color: transparent;	
+}
+
+.navSplitter {
+	padding-top: 1px;
+	padding-bottom: 1px;	
+	color: #FFFFFF;	
+}

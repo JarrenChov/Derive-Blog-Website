@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* Main CSS Document */
+
+/*
+------------------------
+	HTML LAYOUT CSS
+------------------------
+*/
+
+html { 
+	overflow-x: hidden;
+}
+	
+body {
+	background-color: #000000;
+	overflow-y: auto;
+	position: fixed;
+	height: 100%; 
+	width: 100%;
+	background-attachment: fixed;
+	background-image: url(../../images/uofa-openday/backgrounds/opendayMain.jpg); 
+	background-size: cover;
+  	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+/*
+------------------------
+	main-Content CSS
+------------------------
+*/
+
+#contentContainer {
+	width: 100%;
+	top: 20%;
+	position: absolute;
+	text-align: center;
+}
+
+#opendayLogo {
+	position: relative;
+}
+
+#opendayLogoOpen {
+	padding-right: 16px;
+	height: 101px;
+}
+
+#opendayLogoDay {
+	height: 100px;
+}
+
+h1 {
+	font-family: Georgia, serif;
+	font-size: 40px;
+}
+
+.navigationButton {
+	position: relative;
+	font-family: Rajdhani;
+	font-weight: bold;
+	font-size: 18px;
+    border: 2px solid #FFFFFF;
+	background-color: transparent;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;	
+}
+
+.navigationButton:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+#uofaLogoContainer {
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 0%;
+}
+
+#uofaLogo {
+	height: 100px;
+}
+#seekLightLogo {
+	margin-top: -0.5%;
+	height: 50px;
+}

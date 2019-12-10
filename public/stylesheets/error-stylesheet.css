@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 404 Error Page CSS Document */
+
+.invlaid {
+	padding: 30px 20px 50px;
+	height: auto;
+	width: auto;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+	margin: 0 auto;
+	box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+	background: #fcfcfc;
+}
+
+h2 {
+	margin: 0 10px;
+	font-size: 80px;
+	text-align: center;
+}
+
+p.error, ul {
+	margin:0 auto;	
+	display: table;
+	font-size: 20px;
+}
+
+p {
+	text-align: center;
+}

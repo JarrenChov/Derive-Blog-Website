@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* Font CSS Document */
+
+/*
+--------------------------------
+	Font styles - CSS Styles
+--------------------------------
+*/
+
+@font-face {
+	font-family: Amatic-SC;	
+	src: url(../fonts/title/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+	font-family: Chivo;	
+	src: url(../fonts/body/Chivo-Regular.ttf)
+}
+
+@font-face {
+	font-family: Rajdhani;
+	src: url(../fonts/navigation/Rajdhani-Regular.ttf);
+}

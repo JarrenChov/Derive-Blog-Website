@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+-----------------------------------------
+	Mainily used duplicate CSS styles
+-----------------------------------------	
+*/
+
+.textLayout {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+	color: #7E7C7C;
+	background-color: #ffffff;
+}
+
+.subtextLayout {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+	color: #FFFFFF;
+	background-color: #272727;
+}
+
+.footerSection {
+	position: relative;
+	left:-80px; 
+	top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center justify;
+}
+
+.headertextLayout {
+	color: #F7F7F7;
+	font-size: 25px;
+	background-color:transparent;
+}
+
+.backgroundLayout {
+	position: relative;
+  	background-attachment: fixed;
+  	background-position: center;	
+	background-size: cover;
+  	background-repeat: no-repeat;
+}
+
+/*
+-----------------------------------------
+	Background Images CSS styles
+-----------------------------------------	
+*/
+
+.firstBackground {
+  	background-image: url(../images/backgrounds/first-background.jpg);
+  	min-height: 100%;	
+}
+
+.secondaryBackground {
+	background-image: url(../images/backgrounds/second-background.jpg);
+  	min-height: 400px;	
+}
+
+.thirdBackground {
+  	background-image: url(../images/backgrounds/third-background.jpg);
+  	min-height: 400px;	
+}
+
+.fourthBackground {
+  	background-image: url(../images/backgrounds/fourth-background.jpg);
+  	min-height: 100%;
+}
+
+/*
+----------------------------------
+	Main CSS styles start here
+----------------------------------	
+*/
+
+body, html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Rajdhani;
+	font-weight: 400;
+	font-size: 20px;
+	background: #242422;
+}
+
+.quoteLayout {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 50%;
+	text-align: center;
+	color: 	#131313;
+}
+
+span.quoteText {
+	padding: 18px;
+	font-size: 40px;
+	letter-spacing: 10px;
+	color: #ffffff;
+	background-color: transparent;
+}
+
+a:link, a:visited {
+	color: #A3A3A3;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+h2 {
+	font-family: Amatic-SC;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;
+	color: #008CBA;		
+}
+
+p {
+	text-align: center;
+}
+
+/*
+--------------------------------------
+	Auto Page Jump CSS Starts Here
+--------------------------------------	
+*/
+
+.scrollingTextDown, .scrollingDown {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	right: 20px;
+	bottom: 1.5%;
+	text-align: right;
+	color: #A3A3A3;
+}
+
+.scrollingDown, .scrollingIconUp {
+	padding-top: inherit;
+}
+
+.scrollingIconDown, .scrollingIconUp {
+	position: inherit;
+	width: inherit;
+	height: inherit;
+	right: 180px;
+	bottom: -17px;
+	text-align: inherit;
+	background-color: transparent;		
+}
+
+.scrollingText {
+	font-size: 24px;
+}
+
+.scrollingText:hover, a:focus, a:active  {
+/*	#223C6B*/
+	color: #048FA6;
+	text-decoration: underline;	
+}
+
+.scrollingIconDown, .scrollingIconUp {
+	font-size: 50px;	
+}
+
+/*
+--------------------------------------
+	Navigation Menu CSS Color
+--------------------------------------	
+*/
+
+.menuIconNavigation {	
+	color: #3E3E3E;
+}

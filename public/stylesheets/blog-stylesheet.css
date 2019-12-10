@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+
+h4 {
+ 	margin: 10px 0px 0px 0px;	
+	text-align: center;
+	font-size: 30px;
+	text-decoration: underline;	
+}
+
+h5 {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+	margin-bottom: -10px;	
+}
+
+#blogStatus {
+	color: #FF4500;
+}
+
+h30 {
+	font-size: 28px;
+}
+
+h31 {
+	font-size: 20px;
+}
+
+#blogPostReload {
+	padding: 2% 0px;
+    text-align: center;
+}
+
+/*
+-------------------------------
+	Blog Posting Button CSS
+-------------------------------
+*/
+
+.blog_post, .blog_post:hover, span {
+	border-radius: 4px;
+	text-align: center; 
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.blog_post, .blog_post:hover {
+	padding: 15px;	
+}
+
+.blog_post {
+	background-color: transparent;
+	color: #000000;
+}
+
+.blog_post:hover {
+	background-color: #048FA6;
+	color: #FFFFFF;
+}	
+
+/*
+-------------------------------
+	All Posts CSS
+-------------------------------
+*/
+
+#blogPostTitle {
+	padding-bottom: 0.5%;
+}
+
+.blogHeadingText, #blogText {
+	margin-left: 4%;
+}
+
+.deleteBlogButton {
+	float: right;
+	padding-top: 1%;
+}
+
+.blogHeadingText {
+	font-size: 20px;
+	font-style:italic;
+	font-weight: bold;
+	color: #176583;
+}
+
+.blogSpanText {
+	font-size: 20px;
+	font-weight: normal;
+	color: #000000;
+}
+
+#blogEntryCount {
+	padding-bottom: 0.2%;
+	margin-top: -10px;
+	font-weight: normal;
+	font-size: 20px;
+	text-align: left;
+}
+
+#blogEntryCountSpan {
+	font-size: 26px;
+	font-family: Amatic-SC;
+	font-weight: bold;
+	color: #176583;
+	text-decoration: underline;
+}
+
+#blogBreaker {
+	opacity: 0;
+}
+
+#blogPageCountSpan {
+	float: right;
+}
+/*
+-------------------------------
+	AUTO REFRESH CSS
+-------------------------------
+*/
+
+#autoReload {
+	margin-top: -10px;
+	margin-bottom: -5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#autoReloadStatus {
+	color: #FF4500;
+	font-weight: normal;
+}
+
+/*
+-------------------------------
+	All Posts Navigation CSS
+-------------------------------
+*/
+
+#blogNavigation {
+	width: 100%;
+	display: flex;
+	margin-left: -1.25%;
+	align-content: center;
+}
+
+#blogNavigationText {
+	width: 100%;
+	text-align: center;
+}
+
+#blogNavigationPrevButton, #blogNavigationNextButton {
+	position: relative;
+	top: -13.5%;
+	font-size: 20px;
+	color: #D3D3D3;
+}
+
+#blogNavigationPrevButton:hover, #blogNavigationNextButton:hover {
+	font-size: 24px;
+	color: #176583;
+}
+
+
+#blogNavigationSplitButton {
+	color: #C0C0C0;
+	font-size: 48px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ATTACHED STYLESHEETS --> 
+       	<link href="stylesheets/preloader-stylesheet.css" rel="stylesheet" type="text/css"> 
+        <link rel="stylesheet" type ="text/css" href="stylesheets/font-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">        
+        <link href="stylesheets/map-stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/tabs-stylesheet.css" rel="stylesheet" type="text/css">       
+        <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css">    
+<!-- ATTACHED SCRIPTS -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChFtWwOZ5ies4V4sTt75ARHG5TfyYZNQ8&callback=initMap"></script>
+<!--         <script src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
+        <script type="text/javascript" src="javascripts/Location.js"></script>        
+        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
+        <script src="http://www.jqueryscript.net/css/jquerysctipttop.css"></script>
+        <script src="http://fonts.googleapis.com/css?family=Raleway"></script>
+        <script type="text/javascript" src="javascripts/validation.js"></script>        
+        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
+        <script type="text/javascript" src="javascripts/blogEntryLoader.js"></script>
+  		<script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
+        <script type="text/javascript" src="javascripts/OnLoadFunction.js"></script>          
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
+        <script type="text/javascript" src="javascripts/preloader.js"></script>
+       	<link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">     
+        <title>DÉRIVE | Blog</title>  
+    </head>
+    <body> 
+<!-- START NAVIGATION BAR -->         
+		<div class="navigationHead">  
+			<div class="nameNavigation">
+				<h1><a id="navigationLogo" href="/home">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
+			</div>                     
+			<div class="menuIconNavigation">
+				<h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+			</div> 
+
+			<div id="navigationBar" class="navigation">
+				<div class="leftNavigation">
+					<div class="leftNavigationText">   
+						<p><span id="userDate"></span><sup><span id="ordinalIndicator"></span></sup> <span id="userTimeHours"></span><span id="userTimeBlinker">:</span><span id="userTimeMinutes"></span> <br> <span id="timePeriod"></span>!</p>            
+					</div>
+				</div>
+				<div class="rightNavigation">
+					<div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+					<ul class="navigationLinks">
+						<li class="navigationLink navigationFont"> <a class="navigationLink" href="/home">Home</a></li>   <li class="navigationLink navigationFont navSplitter">---</li>
+						<li class="navigationLink navigationFont"> <a class="navigationLink" id="current"  href="/blog">Blog</a></li>
+						<li class="navigationLink navigationFont navSplitter">---</li>
+						<li class="navigationLink navigationFont"> <a class="navigationLink" href="/places-visited">Places Visited</a></li>
+					</ul>
+				</div>       
+			</div> 
+		</div>   
+<!-- END NAVIGATION BAR --> 
+<!-- START PRELOADER -->
+		<div id="load">
+			<div id="LoadingContent">
+				<p id="loading"><span id="loadingText"></span><br><span id="loading1"></span><span id="loading2"></span><span id="loading3"></span><span id="loading4"></span><span id="loading5"></span></p>
+			</div>
+			<div id="outerCircle"></div>
+			<div id="innerCircle"></div>
+		</div>
+<!-- END PRELOADER -->
+<!-- START PRELOADER CONTENT-->	
+  		<h100 id="contents">   
+ <!-- START MAIN CONTAINER -->             
+		<div class = "contentContainer ContentText">
+			<div id="content">
+				<div id="scrollableContent">
+					<div id="paddingContent">
+						<div class = "mapContainer">
+							<div id="map" ></div>
+							<script src="./javascripts/Google_Map.js"></script>
+						</div>                
+						<div id="blog">
+							<input id="blogTab1" type="radio" name="tabs" checked>
+							<label for="blogTab1" onclick="postPageReload()">ALL POSTS</label>
+							<input id="blogTab2" type="radio" name="tabs">
+							<label for="blogTab2" style="float:right;" onclick="disablePageReload()">POST A BLOG </span></a></label>
+							<section id="blogContent1">
+								<script> load_data() </script>
+							</section>
+							<section id="blogContent2">
+								<h4>Post Your Blog Comment</h4>
+								<h5>Current Status: <span id="blogStatus"></span><br><span id="blogStatusError"></h5>
+								<p hidden>Latitude: <span id="latitude"></span></p>
+								<p hidden>Longitude: <span id="longitude"></span></p>
+								<script> load_data_map() </script>
+								<!--<button class="blog_post" onclick="SendData()">Current Location</button></p> -->
+								<form name="submit_post" method="post" action="/submit" onsubmit="return validateForm();">
+									<h6 hidden>Country: <br><span id="country"></span></h6>
+									<p hidden>Time: <input type="text" id="current_time" name="current_time" placeholder="This field will be auto-filled" readonly></p>
+									<h6>Your Full Name: <br><input type="text" id="current_name" name="current_name" placeholder="Write your full name here!" style="width: 280px;" required></h6>
+									<h6>Name of Current Place: <br><input type="text" id="current_place" name="current_place" placeholder="Write your current location / place here!" style="width: 280px;" required></h6>
+									<p hidden>Country: <input type="text" id="country_new" name="country_new" placeholder="This field will be auto-filled" readonly></p>
+									<p hidden>Latitude: <input type="text" id="latitude_new" name="latitude_new" placeholder="This field will be auto-filled" readonly></p>
+									<p hidden>Longitude: <input type="text" id="longitude_new" name="longitude_new" placeholder="This field will be auto-filled" readonly></p>
+									<h6>Comment:<br>
+									<textarea name="comment_now" id="comment_now" style="height: 150px; width: 450px; max-width: 450px;" placeholder="Write something about your current location / place here!" required></textarea></h6></br>
+									<input class="blog_post" type="submit" value="Submit Your Post">
+								</form>
+							</section>                            
+						</div>  
+					</div>
+				</div>
+			</div>       
+		</div>
+<!-- END MAIN CONTAINER -->          
+<!-- START FOOTER BAR --> 
+		<div class="footerContainer">
+			<div class="footerItems">
+				<div id="footerLogo">
+					<h1><span style="font-size: 25px;">D</span>ÉRIVE</h1>
+				</div>
+				<div id="footerLeftSide">
+					<p id="LeftText1" class="FooterText">Powered by 404</p>
+				</div>
+				<div id="footerCenter">
+					<a class="LeftTextNavigation" href="/home">Home</a>
+					<a class="LeftTextNavigation">-</a>
+					<a class="LeftTextNavigation" href="/blog">Blog</a>
+					<a class="LeftTextNavigation">-</a>
+					<a class="LeftTextNavigation" href="/places-visited">Places Visited</a>                          
+				</div>
+				 <div id="footerRightSide">
+					<p id="RightText1" class="FooterText">KEEP UP &#8226; CONNECT &#8226; FOLLOW US</p>
+					<div id="footerContactIcons">
+						<a href="https://www.facebook.com/"><img src="images/Icons/Facebook_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Facebook Icon"/></a>
+						<a href="https://twitter.com/"><img src="images/Icons/Twitter_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Twitter Icon"/></a>
+						<a href="https://www.instagram.com/"><img src="images/Icons/Instagram_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Instragram Icon"/></a> 
+						<a href="https://www.youtube.com/"><img src="images/Icons/Youtube_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Youtube Icon"/></a>
+					</div>
+				</div>
+			</div>          
+		</div>   
+<!-- END FOOTER BAR -->
+  		</h100>  
+<!-- END PRELOADER CONTENT-->		
+	</body>
+</html>

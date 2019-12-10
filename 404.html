@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ATTACHED STYLESHEETS -->        
+        <link rel="stylesheet" type="text/css" href="stylesheets/font-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">       
+        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">   
+        <link rel="stylesheet" type="text/css" href="stylesheets/error-stylesheet.css">             
+<!-- ATTACHED SCRIPTS -->      
+        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
+        <script type="text/javascript" src="javascripts/OnLoadFunction.js"></script>         
+        <link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">  
+        <title>DÉRIVE</title>        
+    </head>
+    <body>
+<!-- START NAVIGATION BAR -->           
+        <div class="navigationHead">  
+            <div class="nameNavigation">
+                <h1><a id="navigationLogo" href="/home">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
+            </div>                     
+            <div class="menuIconNavigation">
+                <h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+            </div> 
+            <div id="navigationBar" class="navigation">
+                <div class="leftNavigation">
+                    <div class="leftNavigationText">   
+                        <p><span id="userDate"></span><sup><span id="ordinalIndicator"></span></sup> <span id="userTimeHours"></span><span id="userTimeBlinker">:</span><span id="userTimeMinutes"></span> <br> <span id="timePeriod"></span>!</p>
+                    </div>
+                </div>
+                <div class="rightNavigation">
+                    <div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+					<ul class="navigationLinks">
+						<li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="/home">Home</a></li>   <li class="navigationLink navigationFont navSplitter">---</li>
+						<li class="navigationLink navigationFont"> <a class="navigationLink" href="/blog">Blog</a></li>
+						<li class="navigationLink navigationFont navSplitter">---</li>
+						<li class="navigationLink navigationFont"> <a class="navigationLink" href="/places-visited">Places Visited</a></li>
+					</ul>
+                </div>       
+            </div> 
+        </div>    
+<!-- END NAVIGATION BAR --> 
+<!-- START MAIN CONTAINER -->               
+        <div class = "contentContainer ContentText">   
+            <div id="content" style="padding-top:120px;padding-bottom:0px">
+                <div id="scrollableContent">
+                    <div id="paddingContent">
+                        <div class="invlaid">
+                            <div class="container">
+                                <h2>404 Page Not Found</h2>
+                                <br>
+                                <p class="error">Sorry, but we can't find the page you're looking for.<br>It looks like this could be the result of either:</p>
+                                <ul>
+                                    <li>a mistyped address</li>
+                                    <li>a out-of-date link</li>
+                                </ul>
+                            </div>
+                            <img id="pusheenCat404" class="pusheenCat" src="images/Images/pusheen404.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+<!-- END MAIN CONTAINER -->         
+    </body>
+</html>

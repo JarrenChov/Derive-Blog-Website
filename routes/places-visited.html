@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ATTACHED STYLESHEETS -->
+       <link href="stylesheets/preloader-stylesheet.css" rel="stylesheet" type="text/css">      
+        <link rel="stylesheet" type ="text/css" href="stylesheets/font-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation-stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css">
+        <link href="stylesheets/map-stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/tabs-stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/footer-stylesheet.css"> 
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">         
+<!-- ATTACHED SCRIPTS -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChFtWwOZ5ies4V4sTt75ARHG5TfyYZNQ8&callback=initMap"></script>
+<!-- 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
+        <script type="text/javascript" src="javascripts/Location.js"></script>
+		<script type="text/javascript" src="javascripts/navigationBar.js"></script>
+        <script src="http://www.jqueryscript.net/css/jquerysctipttop.css"></script>
+        <script src="http://fonts.googleapis.com/css?family=Raleway"></script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="javascripts/navigationBar.js"></script>
+        <script type="text/javascript" src="javascripts/changeFooterIcon.js"></script>
+        <script type="text/javascript" src="javascripts/OnLoadFunction.js"></script>         
+        <script type="text/javascript" src="javascripts/navigationTimeDisplay.js"></script>
+        <script type="text/javascript" src="javascripts/preloader.js"></script>  
+       	<link rel="shortcut icon" type="image/x-icon" href="images/Icons/Derive_Icon.ico">
+       	<script type="text/javascript" src="javascripts/preloader.js"></script>     
+        <title>DÉRIVE | places-visited</title>
+    </head>
+    <body>    
+<!-- START NAVIGATION BAR -->         
+		<div class="navigationHead">  
+			<div class="nameNavigation">
+				<h1><a id="navigationLogo" href="/home">D<span style="color:#FFFFFF">É</span>RIVE</a></h1>
+			</div>                     
+			<div class="menuIconNavigation">
+				<h1 class="openNavigationBar" style="cursor: pointer" onclick="openNavigationBar()">&#9776;</h1>
+			</div> 
+			<div id="navigationBar" class="navigation">
+				<div class="leftNavigation">
+					<div class="leftNavigationText">   
+					<p><span id="userDate"></span><sup><span id="ordinalIndicator"></span></sup> <span id="userTimeHours"></span><span id="userTimeBlinker">:</span><span id="userTimeMinutes"></span> <br> <span id="timePeriod"></span>!</p>           
+					</div>
+				</div>
+				<div class="rightNavigation">
+					<div class="closeNavigationBar" style="cursor: pointer" href="javascript:void(0)" onclick="closeNavigationBar()">&#10005;</div>
+					<ul class="navigationLinks">
+						<li class="navigationLink navigationFont"> <a class="navigationLink" href="/home">Home</a></li>   <li class="navigationLink navigationFont navSplitter">---</li>
+						<li class="navigationLink navigationFont"> <a class="navigationLink" href="/blog">Blog</a></li>
+						<li class="navigationLink navigationFont navSplitter">---</li>
+						<li class="navigationLink navigationFont"> <a class="navigationLink" id="current" href="/places-visited">Places Visited</a></li>
+					</ul>
+				</div>       
+			</div> 
+		</div>   
+<!-- END NAVIGATION BAR -->
+<!-- START PRELOADER -->
+		<div id="load">
+			<div id="LoadingContent">
+				<p id="loading"><span id="loadingText"></span><br><span id="loading1"></span><span id="loading2"></span><span id="loading3"></span><span id="loading4"></span><span id="loading5"></span></p>
+			</div>
+			<div id="outerCircle"></div>
+			<div id="innerCircle"></div>
+		</div>
+<!-- END PRELOADER -->
+<!-- START PRELOADER CONTENT-->	
+		<h100 id="contents"> 
+<!-- START MAIN CONTAINER -->     
+		<div class = "contentContainer ContentText">    
+			<div id="content">
+				<div id="scrollableContent">
+					<div id="paddingContent">
+						<h4 style="">Places Anyone Have Blogged In</h4>
+							 <div class = "contentContainer" style = "padding-top: 1%;">
+						<div class = "mapContainer">
+							<div id="map" style="height:850px"></div>
+							<script src="./javascripts/Multiple.js"></script>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>         
+		</div>
+<!-- END MAIN CONTAINER -->        
+<!-- START FOOTER BAR --> 
+		<div class="footerContainer">
+			<div class="footerItems">
+				<div id="footerLogo">
+					<h1><span style="font-size: 25px;">D</span>ÉRIVE</h1>
+				</div>
+				<div id="footerLeftSide">
+					<p id="LeftText1" class="FooterText">Powered by 404</p>
+				</div>
+				<div id="footerCenter">
+					<a class="LeftTextNavigation" href="/home">Home</a>
+					<a class="LeftTextNavigation">-</a>
+					<a class="LeftTextNavigation" href="/blog">Blog</a>
+					<a class="LeftTextNavigation">-</a>
+					<a class="LeftTextNavigation" href="/places-visited">Places Visited</a>                          
+				</div>
+				 <div id="footerRightSide">
+					<p id="RightText1" class="FooterText">KEEP UP &#8226; CONNECT &#8226; FOLLOW US</p>
+					<div id="footerContactIcons">
+						<a href="https://www.facebook.com/"><img src="images/Icons/Facebook_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Facebook Icon"/></a>
+						<a href="https://twitter.com/"><img src="images/Icons/Twitter_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Twitter Icon"/></a>
+						<a href="https://www.instagram.com/"><img src="images/Icons/Instagram_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Instragram Icon"/></a> 
+						<a href="https://www.youtube.com/"><img src="images/Icons/Youtube_Icon.png" onmouseover="ChangeIcon(this)" onmouseout="ReturnIcon(this)" alt="Youtube Icon"/></a>
+					</div>
+				</div>
+			</div>          
+		</div>   
+<!-- END FOOTER BAR -->
+		</h100>
+<!-- END PRELOADER CONTENT-->   
+    </body>
+</html>
