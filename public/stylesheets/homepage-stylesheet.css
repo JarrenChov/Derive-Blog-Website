@@ -3,8 +3,8 @@
 
 /*
 -----------------------------------------
-	Mainily used duplicate CSS styles
------------------------------------------	
+	Mainly used duplicate CSS styles
+-----------------------------------------
 */
 
 .textLayout {
@@ -30,7 +30,7 @@
 
 .footerSection {
 	position: relative;
-	left:-80px; 
+	left:-80px;
 	top: 50px;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -47,42 +47,42 @@
 
 .backgroundLayout {
 	position: relative;
-  	background-attachment: fixed;
-  	background-position: center;	
+  background-attachment: fixed;
+  background-position: center;
 	background-size: cover;
-  	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 /*
 -----------------------------------------
 	Background Images CSS styles
------------------------------------------	
+-----------------------------------------
 */
 
 .firstBackground {
-  	background-image: url(../images/backgrounds/first-background.jpg);
-  	min-height: 100%;	
+	background-image: url(../images/backgrounds/first-background.jpg);
+	min-height: 100%;
 }
 
 .secondaryBackground {
 	background-image: url(../images/backgrounds/second-background.jpg);
-  	min-height: 400px;	
+  min-height: 400px;
 }
 
 .thirdBackground {
-  	background-image: url(../images/backgrounds/third-background.jpg);
-  	min-height: 400px;	
+	background-image: url(../images/backgrounds/third-background.jpg);
+	min-height: 400px;
 }
 
 .fourthBackground {
-  	background-image: url(../images/backgrounds/fourth-background.jpg);
-  	min-height: 100%;
+	background-image: url(../images/backgrounds/fourth-background.jpg);
+	min-height: 100%;
 }
 
 /*
 ----------------------------------
 	Main CSS styles start here
-----------------------------------	
+----------------------------------
 */
 
 body, html {
@@ -124,7 +124,7 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 5px;
-	color: #008CBA;		
+	color: #008CBA;
 }
 
 p {
@@ -134,7 +134,7 @@ p {
 /*
 --------------------------------------
 	Auto Page Jump CSS Starts Here
---------------------------------------	
+--------------------------------------
 */
 
 .scrollingTextDown, .scrollingDown {
@@ -158,7 +158,7 @@ p {
 	right: 180px;
 	bottom: -17px;
 	text-align: inherit;
-	background-color: transparent;		
+	background-color: transparent;
 }
 
 .scrollingText {
@@ -168,19 +168,19 @@ p {
 .scrollingText:hover, a:focus, a:active  {
 /*	#223C6B*/
 	color: #048FA6;
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 .scrollingIconDown, .scrollingIconUp {
-	font-size: 50px;	
+	font-size: 50px;
 }
 
 /*
 --------------------------------------
 	Navigation Menu CSS Color
---------------------------------------	
+--------------------------------------
 */
 
-.menuIconNavigation {	
+.menuIconNavigation {
 	color: #3E3E3E;
 }

@@ -3,47 +3,47 @@
 Blog.html: posts and view all posts
 
 	Tabs CSS styles start here
-----------------------------------	
+----------------------------------
 */
 
 #blog {
-    background: #fff;
+	background: #fff;
 }
 
 section {
-    display: none;
-    margin: 0 20px 20px 20px;
-    border-top: 1px solid #ddd;
+	display: none;
+	margin: 0 20px 20px 20px;
+	border-top: 1px solid #ddd;
 }
 
-input[type=radio] { 
-    display: none;
+input[type=radio] {
+	display: none;
 }
 
 label {
-    display: inline-block;
-    margin: 0 0 -1px;
-    padding: 15px 25px;
-    font-weight: 600;
-    text-align: center;
-    color: #bbb;
-    border: 1px solid transparent;
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #bbb;
+	border: 1px solid transparent;
 }
 
 label:hover {
-    color: #888;
-    cursor: pointer;
+	color: #888;
+	cursor: pointer;
 }
 
 input:checked + label {
-    color: #555;
-    border: 1px solid #ddd;
-    border-bottom: 2px solid #048FA6;
-    border-top: 1px solid transparent;
+	color: #555;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #048FA6;
+	border-top: 1px solid transparent;
 }
 
 #blogTab1:checked ~ #blogContent1,
 #blogTab2:checked ~ #blogContent2{
-    display: block;
-    padding-bottom:14px;
+	display: block;
+	padding-bottom:14px;
 }

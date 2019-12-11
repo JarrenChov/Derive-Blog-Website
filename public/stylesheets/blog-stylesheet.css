@@ -8,10 +8,10 @@ h3 {
 }
 
 h4 {
- 	margin: 10px 0px 0px 0px;	
+ 	margin: 10px 0px 0px 0px;
 	text-align: center;
 	font-size: 30px;
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 h5 {
@@ -22,7 +22,7 @@ h5 {
 
 h6 {
 	font-size: 18px;
-	margin-bottom: -10px;	
+	margin-bottom: -10px;
 }
 
 #blogStatus {
@@ -49,15 +49,18 @@ h31 {
 */
 
 .blog_post, .blog_post:hover, span {
-	border-radius: 4px;
-	text-align: center; 
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
 .blog_post, .blog_post:hover {
-	padding: 15px;	
+	padding: 15px;
 }
 
 .blog_post {
@@ -68,7 +71,7 @@ h31 {
 .blog_post:hover {
 	background-color: #048FA6;
 	color: #FFFFFF;
-}	
+}
 
 /*
 -------------------------------
@@ -151,9 +154,14 @@ h31 {
 
 #blogNavigation {
 	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: -1.25%;
-	align-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
 }
 
 #blogNavigationText {

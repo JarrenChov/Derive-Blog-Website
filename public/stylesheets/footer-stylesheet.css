@@ -4,18 +4,18 @@
 /*
 -------------------
 	Font style
--------------------	
+-------------------
 */
 
 .FooterText, a.LeftTextNavigation {
 	font-family: Rajdhani;
-   	font-weight: normal;	
+  font-weight: normal;
 	font-size: 17px;
 	text-decoration: none;
 }
 
 .FooterText {
-	color: #000000;	
+	color: #000000;
 }
 
 a.LeftTextNavigation:link, a.LeftTextNavigation:visited, a.LeftTextNavigation:hover, a.LeftTextNavigation:active {
@@ -25,11 +25,11 @@ a.LeftTextNavigation:link, a.LeftTextNavigation:visited, a.LeftTextNavigation:ho
 /*
 ------------------------------
 	Footer main CSS
-------------------------------	
+------------------------------
 */
 
 .footerContainer {
-	position: absolute;	
+	position: absolute;
 	bottom: 0;
 	min-height: 150px;
 	background-color: #FFFFFF;
@@ -39,20 +39,20 @@ a.LeftTextNavigation:link, a.LeftTextNavigation:visited, a.LeftTextNavigation:ho
 .footerItems {
 	top: 10px;
 	position: relative;
-	margin: 0 11%;	
+	margin: 0 11%;
 }
 
 a.LeftTextNavigation {
 	position: relative;
 	left: 20px;
 	margin-left: 15px;
-	font-size: 18px;	
+	font-size: 18px;
 }
 
 /*
 ------------------------------
 	Footer - Left Side
-------------------------------	
+------------------------------
 */
 
 #footerLogo {
@@ -60,7 +60,7 @@ a.LeftTextNavigation {
 	top: 6px;
 	text-align: left;
 	font-family: Chivo;
-	font-size: 8px;	
+	font-size: 8px;
 	color: #176583;
 }
 
@@ -73,20 +73,20 @@ a.LeftTextNavigation {
 /*
 ------------------------------
 	Footer - Center
-------------------------------	
+------------------------------
 */
 
 #footerCenter {
 	position: absolute;
 	right: 0;
 	top: 90px;
-	marigin: 0 40%;
+	margin: 0 40%;
 	left: -100px;
 	text-align: center;
 }
 
 a#footerSplitter:before {
-   	content: "|";
+  content: "|";
 	position: relative;
 	left: 20px;
 	margin-left: 15px;
@@ -96,7 +96,7 @@ a#footerSplitter:before {
 /*
 ------------------------------
 	Footer - Right Side
-------------------------------	
+------------------------------
 */
 
 #footerRightSide {
@@ -110,7 +110,7 @@ img {
 	position: relative;
 	width: 20px;
 	top: -10px;
-	height: 20px; 
+	height: 20px;
 	margin: 0 10px;
 	padding-right: 8px;
 }
