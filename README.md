@@ -54,14 +54,7 @@ Please take note that:
 - A database replica of a client blog entry are stored in `Places_Visited.json`
 
 # Usage
-The project comes bundled with a pre-existing execution file and can be run without any need for compiling. However, if you wish to make any changes to the source code itself, the `Makefile` will need to be run to create a new executable with applied changes.
-
-## Compiling
-To generate a new executable, save any made changes to the files located in `/include` or `/src` and navigate to the root directory: `A-Star-Pathfinding`.
-Run the command:
-```bash
- make
-```
+The project comes bundled with all necessary files needed to generate corresponding dependencies and packages. If you wish to make any changes, these can be done and changes will be displayed on a new instance of a server.
 
 ## Important Notes Before Execution
 Please read carefully the following notes, as unexpected behavior and failure to start may be encountered. Although, there is should not really anything that should stop the website from running in your environment, some issues may be encountered which may be out .
