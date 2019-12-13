@@ -1,8 +1,12 @@
 # DÉRIVE Blog Website
-A project built solely using express and no frameworks
+A real-time blogging website that allows users around the world to post publicly about their current location.
+
+The basis of Derive is a website project built using nodejs and the core fundamentals of web development (HTML, CSS, Javascript).
+In addition, DÉRIVE was used as a showcase piece for Adelaide University Open Day 2017.
 
 # Table of Contents
 - [General](#general)
+  - [Sample Snapshots](#sample-snapshots)
   - [Directory Structure](#directory-structure)
 - [Usage](#usage)
   - [Important Notes Before Execution](#important-notes-before-execution)
@@ -12,6 +16,20 @@ A project built solely using express and no frameworks
 - [Recognitions](#recognitions)
 
 # General
+## Sample Snapshots
+The following are taken sample screenshots of Derive.
+Landing Page (Showcase finalized):
+<img src="https://user-images.githubusercontent.com/40910468/70799631-15068600-1dfa-11ea-917e-ad5ab2dc59ac.png" alt="Snapshot 1" width="550" height="300">
+
+Home Page:
+<img src="https://user-images.githubusercontent.com/40910468/70799217-e76d0d00-1df8-11ea-8851-79cdfd9d9abd.png" alt="Snapshot 1" width="550" height="300">
+
+Blog Entry:
+<img src="https://user-images.githubusercontent.com/40910468/70799215-e76d0d00-1df8-11ea-8eff-32e1616d648d.png" alt="Snapshot 2" width="550" height="300">
+
+User Navigation:
+<img src="https://user-images.githubusercontent.com/40910468/70799219-e76d0d00-1df8-11ea-9328-a6f01d4d754a.png" alt="Snapshot 3" width="550" height="300">
+
 ## Directory Structure
 Initial directory structure without any make-shift changes or modifications are as specified:
 ```bash
